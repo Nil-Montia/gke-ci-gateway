@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: jenkins-home
+  name: mongo
 spec:
   accessModes: 
     - ReadWriteOnce
