@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: react
-        image: nilmontia/aes-encryption-service
+        image: docker.io/nilmontia/aes-encryption-service
         ports:
         - containerPort: 3000
