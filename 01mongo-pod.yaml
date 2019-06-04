@@ -6,7 +6,7 @@ metadata:
     app: mongo
 spec:
   containers:
-    - name: 
+    - name: mongo
       image: docker.io/library/mongo
       volumeMounts:
         - name: database
