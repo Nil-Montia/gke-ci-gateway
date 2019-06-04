@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aes-encryption-service
+  labels:
+    app: aes-encryption-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aes-encryption-service
+  template:
+    metadata:
+      labels:
+        app: aes-encryption-service
+    spec:
+      containers:
+      - name: react
+        image: nilmontia/aes-encryption-service
+        ports:
+        - containerPort: 3000
