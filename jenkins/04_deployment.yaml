@@ -15,7 +15,7 @@ spec:
     spec:
       serviceAccountName: jenkins-service-account
       securityContext:
-        fsGroup: 1000
+        fsGroup: 412
       containers:
       - name: jenkins
         securityContext:
