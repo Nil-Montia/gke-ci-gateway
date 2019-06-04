@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongo
+  labels:
+    app: mongo
+spec:
+  containers:
+    - name: 
+      image: docker.io/library/mongo
+      volumeMounts:
+        - name: database
+          mountPath: "/data/db"
+          readOnly: false
+  volumes:
+  - name: database
+    persistentVolumeClaim:
+      claimName: database
