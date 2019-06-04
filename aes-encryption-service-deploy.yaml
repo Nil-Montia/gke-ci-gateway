@@ -15,7 +15,7 @@ spec:
         app: aes-encryption-service
     spec:
       containers:
-      - name: react
+      - name: email-service
         image: docker.io/nilmontia/aes-encryption-service
         ports:
         - containerPort: 3000
