@@ -19,6 +19,6 @@ spec:
         image: docker.io/nilmontia/authentication-service
         env:
         - name: ACTIVATION_LINK
-          value: http://localhost/authentication/api/activate
+          value: http://34.83.31.202/authentication/api/activate
         ports:
         - containerPort: 3000
