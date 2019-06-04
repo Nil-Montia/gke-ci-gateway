@@ -17,5 +17,12 @@ spec:
       containers:
       - name: email-service
         image: docker.io/nilmontia/email-service
+        env:
+        - name: GMAIL_USER
+          value: ilovedocker123@gmail.com
+        - name: GMAIL_PASS
+          value: ilovedocker1!
+        - name: SERVICE_NAME
+          value: "Example Project"
         ports:
         - containerPort: 3000
